@@ -31,7 +31,7 @@ export class Space {
   yes(slots, event) {
     const crafts = event && event.session && event.session.attributes && event.session.attributes.crafts;
 
-    if (crafts !== undefined) {
+    if (crafts) {
       return this.astronautNames(entries(crafts));
     } else {
       return this.numberOfAstronauts();
@@ -45,7 +45,7 @@ export class Space {
           <speak>
             {crafts.map(([craft, crew]) => (
               <speak>
-                <p>On the crew roster for {craft} is:</p>
+                <p>On the crew roster for "{craft}", is:</p>
                 <speak>{crew.map((name) => <s>{name}</s>)}</speak>
                 <break time='1s' />
               </speak>
@@ -62,8 +62,9 @@ export class Space {
   @Intent('AMAZON.HelpIntent')
   help() {
     return Response.build({
-      ask: 'I tell you how about astronauts currently in space. Would you like to know how many are in orbit?',
-      reprompt: 'Would you like to know how many astronauts are currently in orbit?'
+      ask: 'I tell you about astronauts currently in space. Would you like to know how many are in orbit?',
+      reprompt: 'Would you like to know how many astronauts are currently in orbit?',
+      attributes: { crafts: null }
     });
   }
 

@@ -17,7 +17,7 @@ exports[`Help intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "text": "I tell you how about astronauts currently in space. Would you like to know how many are in orbit?",
+      "text": "I tell you about astronauts currently in space. Would you like to know how many are in orbit?",
       "type": "PlainText",
     },
     "reprompt": Object {
@@ -27,6 +27,9 @@ Object {
       },
     },
     "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "crafts": null,
   },
   "version": "1.0",
 }
@@ -105,7 +108,7 @@ exports[`Yes intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "ssml": "<speak><p>On the crew roster for ISS is:</p><s>Peggy Whitson</s><s>Fyodor Yurchikhin</s><s>Jack Fischer</s><break time=\\"1s\\"/><s>Live long and prosper! Goodbye.</s></speak>",
+      "ssml": "<speak><p>On the crew roster for \\"ISS\\", is:</p><s>Peggy Whitson</s><s>Fyodor Yurchikhin</s><s>Jack Fischer</s><break time=\\"1s\\"/><s>Live long and prosper! Goodbye.</s></speak>",
       "type": "SSML",
     },
     "shouldEndSession": true,
