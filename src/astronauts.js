@@ -12,7 +12,7 @@ export default function Astronauts({ crafts }) {
       <speak>
         <s>
           <MessageFormat
-            template='There {numberOfSpaceCrafts, plural, =0{no manned space crafts} one{is one manned space craft} other{are # manned space crafts}} in orbit{numberOfAstronauts, plural, =0{.} one{, crewed by a single astronaut.} other{, with # astronauts in total.}}'
+            template='There {numberOfSpaceCrafts, plural, =0{are currently no manned space crafts} one{is currently one manned space craft} other{are currently # manned space crafts}} in orbit{numberOfAstronauts, plural, =0{.} one{, crewed by a single astronaut.} other{, with # astronauts in total.}}'
             numberOfSpaceCrafts={numberOfSpaceCrafts}
             numberOfAstronauts={numberOfAstronauts} />
         </s>

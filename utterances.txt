@@ -1,3 +1,6 @@
-hello Say hello to {name}
-hello Say hi to {name}
-hello {name}
+NumberOfAstronauts How many astronauts are in orbit
+NumberOfAstronauts How many humans are in space
+NumberOfAstronauts How many manned space crafts are in orbit
+NumberOfAstronauts How many astronauts are in space
+NumberOfAstronauts How many humans are in orbit
+NumberOfAstronauts How many manned space crafts are in space

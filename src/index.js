@@ -1,6 +1,5 @@
 import { Skill, Launch, Intent } from 'alexa-annotations';
-import Response, { say, ask } from 'alexa-response';
-import MessageFormat from './messageformat';
+import Response, { say } from 'alexa-response';
 import space from './space';
 import Astronauts from './astronauts';
 import entries from './entries';
@@ -51,6 +50,7 @@ export class Space {
                 <break time='1s' />
               </speak>
             ))}
+            <s>Live long and prosper! Goodbye.</s>
           </speak>
         )
       });
@@ -69,7 +69,7 @@ export class Space {
 
   @Intent('AMAZON.CancelIntent', 'AMAZON.StopIntent', 'AMAZON.NoIntent')
   stop() {
-    return say('Live long and prosper!');
+    return say('Live long and prosper! Goodbye.');
   }
 
 }

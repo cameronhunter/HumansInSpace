@@ -4,7 +4,7 @@ exports[`Cancel intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "text": "Live long and prosper!",
+      "text": "Live long and prosper! Goodbye.",
       "type": "PlainText",
     },
     "shouldEndSession": true,
@@ -36,7 +36,7 @@ exports[`Launch intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "ssml": "<speak><s>Space, the final frontier!</s><s>There is one manned space craft in orbit, with 3 astronauts in total.</s><s>Would you like to hear the crew rosters?</s></speak>",
+      "ssml": "<speak><s>Space, the final frontier!</s><s>There is currently one manned space craft in orbit, with 3 astronauts in total.</s><s>Would you like to hear the crew rosters?</s></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
@@ -64,7 +64,7 @@ exports[`NumberOfAstronauts intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "ssml": "<speak><s>Space, the final frontier!</s><s>There is one manned space craft in orbit, with 3 astronauts in total.</s><s>Would you like to hear the crew rosters?</s></speak>",
+      "ssml": "<speak><s>Space, the final frontier!</s><s>There is currently one manned space craft in orbit, with 3 astronauts in total.</s><s>Would you like to hear the crew rosters?</s></speak>",
       "type": "SSML",
     },
     "reprompt": Object {
@@ -92,7 +92,7 @@ exports[`Stop intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "text": "Live long and prosper!",
+      "text": "Live long and prosper! Goodbye.",
       "type": "PlainText",
     },
     "shouldEndSession": true,
@@ -105,7 +105,7 @@ exports[`Yes intent 1`] = `
 Object {
   "response": Object {
     "outputSpeech": Object {
-      "ssml": "<speak><p>On the crew roster for ISS is:</p><s>Peggy Whitson</s><s>Fyodor Yurchikhin</s><s>Jack Fischer</s><break time=\\"1s\\"/></speak>",
+      "ssml": "<speak><p>On the crew roster for ISS is:</p><s>Peggy Whitson</s><s>Fyodor Yurchikhin</s><s>Jack Fischer</s><break time=\\"1s\\"/><s>Live long and prosper! Goodbye.</s></speak>",
       "type": "SSML",
     },
     "shouldEndSession": true,
