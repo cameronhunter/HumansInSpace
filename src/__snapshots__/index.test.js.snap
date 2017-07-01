@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cancel intent 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "text": "Live long and prosper!",
+      "type": "PlainText",
+    },
+    "shouldEndSession": true,
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Help intent 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "text": "I tell you how about astronauts currently in space. Would you like to know how many are in orbit?",
+      "type": "PlainText",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "text": "Would you like to know how many astronauts are currently in orbit?",
+        "type": "PlainText",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Launch intent 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><s>Space, the final frontier!</s><s>There is one manned space craft in orbit, with 3 astronauts in total.</s><s>Would you like to hear the crew rosters?</s></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "text": "Would you like me to tell you who is in space?",
+        "type": "PlainText",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "crafts": Object {
+      "ISS": Array [
+        "Peggy Whitson",
+        "Fyodor Yurchikhin",
+        "Jack Fischer",
+      ],
+    },
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`NumberOfAstronauts intent 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><s>Space, the final frontier!</s><s>There is one manned space craft in orbit, with 3 astronauts in total.</s><s>Would you like to hear the crew rosters?</s></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "text": "Would you like me to tell you who is in space?",
+        "type": "PlainText",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "crafts": Object {
+      "ISS": Array [
+        "Peggy Whitson",
+        "Fyodor Yurchikhin",
+        "Jack Fischer",
+      ],
+    },
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Stop intent 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "text": "Live long and prosper!",
+      "type": "PlainText",
+    },
+    "shouldEndSession": true,
+  },
+  "version": "1.0",
+}
+`;
+
+exports[`Yes intent 1`] = `
+Object {
+  "response": Object {
+    "outputSpeech": Object {
+      "ssml": "<speak><p>On the crew roster for ISS is:</p><s>Peggy Whitson</s><s>Fyodor Yurchikhin</s><s>Jack Fischer</s><break time=\\"1s\\"/></speak>",
+      "type": "SSML",
+    },
+    "shouldEndSession": true,
+  },
+  "sessionAttributes": Object {
+    "crafts": Object {
+      "ISS": Array [
+        "Peggy Whitson",
+        "Fyodor Yurchikhin",
+        "Jack Fischer",
+      ],
+    },
+  },
+  "version": "1.0",
+}
+`;

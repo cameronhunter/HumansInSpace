@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "space",
+  "license": "UNLICENSED",
+  "version": "0.1.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "alexa-scripts build",
+    "start": "alexa-scripts start",
+    "test": "alexa-scripts test"
+  },
+  "dependencies": {
+    "alexa-annotations": "^9.1.7",
+    "alexa-response": "^4.2.9",
+    "messageformat": "^1.0.2",
+    "node-fetch": "^1.7.1"
+  },
+  "devDependencies": {
+    "alexa-request": "^0.3.3",
+    "alexa-scripts": "^0.3.4"
+  },
+  "keywords": [
+    "alexa",
+    "alexa-skill",
+    "amazon-echo",
+    "create-alexa-app",
+    "echo"
+  ]
+}
